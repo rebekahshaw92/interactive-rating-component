@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+$font: 'Overpass', sans-serif;
+$white: hsl(0, 0%, 100%);
+$mediumGrey: hsl(216, 12%, 54%);
+$orange: hsl(25, 97%, 53%);
+
+body {
+    font-family: $font;
+}
+
+.card-title {
+    color: $white;
+    font-size: 30px;
+    font-weight: 700;
+    margin: 5%;
+}
+
+.card-text {
+    color: $mediumGrey;
+    margin: 5%;
+    @include media-breakpoint-up(lg){
+        font-size: 15px;
+    }
+}
+
+.result {
+    color: $orange;
+    padding: 5px 15px;
+    margin: 22px 0 10px 0;
+    font-weight: 400;
+    background-color:hsl(216, 12%, 54%, 0.1);
+    border-radius: 20px;
+}
